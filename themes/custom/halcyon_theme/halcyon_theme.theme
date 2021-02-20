@@ -9,3 +9,8 @@ $includes_path = dirname(__FILE__) . '/includes/*.inc';
 foreach (glob($includes_path) as $filename) {
   require_once dirname(__FILE__) . '/includes/' . basename($filename);
 }
+
+function halcyon_theme_preprocess_field__node__halcyon_paragraph(&$variables) {
+  $variables['attributes']['class'][] = 'card-deck';
+  $variables['attributes']['class'][] = 'row';
+}
