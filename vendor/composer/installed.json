@@ -690,6 +690,58 @@
             "install-path": "../doctrine/lexer"
         },
         {
+            "name": "drupal/components",
+            "version": "2.2.0",
+            "version_normalized": "2.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/components.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/components-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "02a57b2274348c7b9c14800c1bc5f5954d64df88"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1611799702",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095",
+                    "email": "virtually.johnalbin@gmail.com"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                }
+            ],
+            "description": "Registers folders of components defined by your theme or module as Twig namespaces",
+            "homepage": "https://drupal.org/project/components",
+            "support": {
+                "source": "https://git.drupalcode.org/project/components"
+            },
+            "install-path": "../../modules/contrib/components"
+        },
+        {
             "name": "drupal/core",
             "version": "8.9.13",
             "version_normalized": "8.9.13.0",
@@ -1207,52 +1259,6 @@
             "install-path": "../../modules/contrib/devel"
         },
         {
-            "name": "drupal/drush",
-            "version": "6.0.0-rc4",
-            "version_normalized": "6.0.0.0-RC4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/drush.git",
-                "reference": "8.x-6.0-rc4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/drush-8.x-6.0-rc4.zip",
-                "reference": "8.x-6.0-rc4",
-                "shasum": "b937035f9de947190cc2438decb56483ff7cc1cd"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-6.0-rc4",
-                    "datestamp": "1376806255",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "installation-source": "dist",
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "moshe weitzman",
-                    "homepage": "https://www.drupal.org/user/23"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/drush",
-            "support": {
-                "source": "https://git.drupalcode.org/project/drush"
-            },
-            "install-path": "../../modules/contrib/drush"
-        },
-        {
             "name": "drupal/entity_reference_revisions",
             "version": "1.8.0",
             "version_normalized": "1.8.0.0",
@@ -1397,6 +1403,71 @@
                 "source": "https://git.drupalcode.org/project/paragraphs"
             },
             "install-path": "../../modules/contrib/paragraphs"
+        },
+        {
+            "name": "drupal/radix",
+            "version": "4.10.0",
+            "version_normalized": "4.10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/radix.git",
+                "reference": "8.x-4.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/radix-8.x-4.10.zip",
+                "reference": "8.x-4.10",
+                "shasum": "b9fd9c0f12be58fc39c06318d3fe081550f5cbf7"
+            },
+            "require": {
+                "drupal/components": "~2.0@beta",
+                "drupal/core": "^8.7.7 || ^9.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.10",
+                    "datestamp": "1601449009",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Drush\\Commands\\radix\\": "Commands/radix/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Arshad Chummun",
+                    "homepage": "https://arshad.io",
+                    "email": "arshad@chummun.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "dsnopek",
+                    "homepage": "https://www.drupal.org/user/266527"
+                }
+            ],
+            "description": "Radix is a base theme for Drupal. It has Bootstrap, Sass, BrowserSync and Font Awesome built-in.",
+            "homepage": "https://www.drupal.org/project/radix",
+            "support": {
+                "source": "https://git.drupalcode.org/project/radix",
+                "issues": "https://www.drupal.org/project/issues/radix"
+            },
+            "install-path": "../../themes/contrib/radix"
         },
         {
             "name": "easyrdf/easyrdf",
