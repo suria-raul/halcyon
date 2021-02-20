@@ -1,0 +1,5 @@
+# Schema for the configuration files of the halcyon_theme theme.
+
+halcyon_theme.settings:
+  type: theme_settings
+  label: 'halcyon_theme settings'
