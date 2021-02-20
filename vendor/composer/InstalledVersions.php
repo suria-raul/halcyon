@@ -25,12 +25,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'd70c790306fe9e14b639c82428486dabdf415878',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -520,6 +520,15 @@ private static $installed = array (
       ),
       'reference' => '4.1.1',
     ),
+    'drupal/drush' => 
+    array (
+      'pretty_version' => '6.0.0-rc4',
+      'version' => '6.0.0.0-RC4',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-6.0-rc4',
+    ),
     'drupal/dynamic_page_cache' => 
     array (
       'replaced' => 
@@ -664,12 +673,12 @@ private static $installed = array (
     ),
     'drupal/legacy-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'd70c790306fe9e14b639c82428486dabdf415878',
     ),
     'drupal/link' => 
     array (

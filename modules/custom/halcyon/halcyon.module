@@ -1,0 +1,13 @@
+<?php
+
+function halcyon_theme() {
+  return [
+    'node__halcyon_paragraph__full' => [
+      'render element' => 'page'
+    ]
+  ];
+}
+
+function halcyon_preprocess_node__halcyon_paragraph__full() {
+
+}
