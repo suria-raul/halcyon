@@ -1,0 +1,7 @@
+name: Halcyon Module
+description: Halcyon Custom Module for Exam
+core: 8.x
+type: module
+package: custom
+dependencies:
+  - drupal:block
