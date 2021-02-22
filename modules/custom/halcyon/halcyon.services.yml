@@ -1,0 +1,5 @@
+services:
+  theme.negotiator.halcyon:
+    class: Drupal\halcyon\Theme\DefaultNegotiator
+    tags:
+      - { name: theme_negotiator, priority: -40}
